@@ -15,7 +15,7 @@ def setup():
     p3 = 55
     p4 = 55
     Lx = 130
-    Ly = 750
+    Ly = 742
     L3 = p3
     L4 = p4
 
@@ -38,43 +38,43 @@ def keyPressed():
         global Ly
         Lx = Lx
         Ly = Ly - 10
-        if Ly<0:
-            Ly = 0
-    if key == '5':
+        if Ly<1:
+            Ly = 1
+    if key == '2':
         global Lx
         global Ly
         Lx = Lx
         Ly = Ly + 10
-        if Ly>Hauteur:
-            Ly=Hauteur
+        if Ly>Hauteur-58:
+            Ly=Hauteur-58
     if key == '7' :
         global Lx
         global Ly
         Lx = Lx - 10
         Ly = Ly - 10
-        if Ly<0:
-            Ly=0
+        if Ly<1:
+            Ly=1
     if key == '9' :
         global Lx
         global Ly
         Lx = Lx + 10
         Ly = Ly - 10
-        if Ly<0:
-            Ly=0
+        if Ly<1:
+            Ly=1
     if key == '1' :
         global Lx
         global Ly
         Lx = Lx - 10
         Ly = Ly + 10
-        if Ly>Hauteur:
-            Ly=Hauteur
+        if Ly>Hauteur-58:
+            Ly=Hauteur-58
     if key == '3' :
         global Lx
         global Ly
         Lx = Lx + 10
         Ly = Ly + 10
-        if Ly>Hauteur:
-            Ly=Hauteur
+        if Ly>Hauteur-58:
+            Ly=Hauteur-58
 
 
 
