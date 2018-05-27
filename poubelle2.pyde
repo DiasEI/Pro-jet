@@ -124,14 +124,14 @@ def draw():
     depEnemie(posX, posY, 55, 55)
     
     for i in range(0 , 800 + 55):
-        global posX, posL
-        if posX < Missile_x < posX + 55:
+        global posX, posL, Player_x
+        if posX < Player_x < posX + 55:
                 global Colision_x
                 Colision_x = True
                 
     for i in range(0 , 800 + 55):
-        global posY, posH, Missile_y
-        if posY < Missile_y < posY + 55:
+        global posY, posH, Player_y
+        if posY < Player_y < posY + 55:
             global Colision_y
             Colision_y = True
     
