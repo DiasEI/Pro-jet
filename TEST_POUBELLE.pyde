@@ -160,7 +160,7 @@ def gere_missile():
     global posH
 #    Missile_x = Player_x +22.5
 #    Missile_y = Player_y - 50
-    if Missile_y < 1 - Missile_h :
+    if Missile_y < 200 - Missile_h :
         tirEnCours = False
 #        print ("Bonjo")
     if 250 < Missile_x < 250 +55 and 100 < Missile_y < 100 -55 :
