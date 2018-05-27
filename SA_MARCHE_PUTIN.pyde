@@ -172,15 +172,26 @@ def draw():
         
             
     global Colision_Xdroit, Colision_Ybas
-    if Colision_Xdroit == True or Colision_Ybas == True or Colision_Xgauche == True or Colision_Yhaut == True:
-        print("HIT")
+    if Colision_Xdroit == True and Colision_Ybas == True: #or Colision_Xgauche == True or Colision_Yhaut == True:
+        print("HIT BD")
+        clear()
+    
+    elif Colision_Xdroit == True and Colision_Yhaut == True:
+        print("HIT HD")
+        clear()
+        
+    elif Colision_Xgauche == True and Colision_Ybas == True:
+        print("HIT BG")
+        clear()
+
+    elif Colision_Xgauche == True and Colision_Yhaut == True:
+        print("HIT HG")
         clear()
     else:
-        Colision_Xdroit = False
         Colision_Xgauche = False
-        Colision_Ybas = False
         Colision_Yhaut = False
-        
+        Colision_Xdroit = False
+        Colision_Ybas = False
 
 #    rect(px,py,pl,ph)
     global Player_x
